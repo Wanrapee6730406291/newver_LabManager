@@ -1,0 +1,240 @@
+
+:root{
+  --bg-clor: #083877;
+  --white: #ffffff;  
+  --black: #000000;
+  --dark-red: #bd300d;
+  --light-red: #C74749;
+  --footer-color: #191a23;
+  --booking-hover: #1770ed;
+  --max-width: 3200px; 
+
+}
+
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+.btn{ /*log out button*/
+  padding: 0.75rem 1.5rem;
+  outline: none; /*เอาเส้นขอบออก เวลาคลิก*/
+  border: none; /*ไม่มีขอบ (border) ให้ปุ่มดูเรียบง่าย*/
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--white);
+  background-color: var(--dark-red);
+  border-radius: 10px;
+  cursor: pointer; /*เปลี่ยนเมาส์เป็นรูปมือ เวลาชี้ที่ปุ่ม*/
+  transition: 0.3;
+  font-family: "Tilt Warp", serif;
+}
+
+.btn:hover {
+ background-color: var(--light-red);
+}
+
+img {
+ width: 100%;
+ display: flex;
+}
+
+a {
+ text-decoration: none;
+}
+
+.logo {
+ /* max-width: 120px; */
+ font-family: "Tac One", serif;
+ font-size: 90px;
+ margin-left: 90px; /* ขยับโลโก้ออกห่างจากขอบซ้าย */
+ color: #000000;
+}
+
+html,
+body {
+ scroll-behavior: smooth;
+ background-color: #083877;
+}
+
+body {
+ font-family: "Tilt Warp", serif;
+}
+
+.header { 
+ background-color: var(--white);
+ background-position: center center;
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+
+nav {
+ background-color: var(--white);
+ /* position: fixed; */
+ /* isolation: isolate; */
+ top: 0;
+ width: 100%;
+ max-width: var(--max-width);
+ margin: auto; 
+ z-index: 9;
+}
+
+.nav__bar {
+ padding: 1rem 40px; /* เพิ่ม padding ซ้าย-ขวา */
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ gap: 2rem;
+ background-color: var(--white);
+} 
+
+
+.nav__btn {
+ display: none;
+ margin-right: 90px; /* ขยับปุ่ม Logout ออกห่างจากขอบขวา */
+}
+
+
+.login-page,
+.login-page * {
+  box-sizing: border-box;
+}
+.login-page {
+  background: #083877;
+  height: 1024px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.login-frame {
+  background: #d9d9d9;
+  border-radius: 10px;
+  width: 65%;
+  height: 850px;;
+  top: 230px;
+  position: relative;
+  left: 19%;
+  box-shadow: 0 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.button-login {
+  /* font-family: "Tilt Warp", serif; */
+  background: #bd300d;
+  border-radius: 10px;
+  width: 50%;
+  height: 90px;
+  position: relative;
+  left: 39%;
+  margin-top:8% ;
+  padding: 1rem;
+  box-shadow: 0 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.auth-links{
+  font-family: "Tilt Warp", serif;
+  color: #000000;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 430px;
+  top: 600px;
+  text-decoration: underline;
+}
+.signup-text{
+  font-family: "Tilt Warp", serif;
+  color: var(--dark-red);
+  font-size: 30px;
+  position: relative;
+  left: 27%;
+}
+.signup-text:hover{
+  color:var(--bg-clor);
+}
+.password-box {
+  background: #ffffff;
+  width: 50%;
+  height: 100px;
+  position: relative;
+  left: 50%;
+  /* margin-top: 1%; */
+  margin-left:-10%;
+  border-radius: 10px;
+  text-align: left;
+  padding: 1rem;
+  box-shadow: 0 0 2px 5px rgba(0, 0, 0, 0.3);
+  font-family: "Tilt Warp", serif;
+
+}
+.password {
+  color: #000000;
+  text-align: left;
+  /* font-family: "TiltWarp-Regular", sans-serif; */
+  font-family: "Tilt Warp", serif;
+  font-size: 45px;
+  font-weight: 400;
+  position: relative;
+  padding-left: 13rem;
+  top: 80px;
+}
+
+.email-address {
+  color: #000000;
+  text-align: left;
+  /* font-family: "TiltWarp-Regular", sans-serif; */
+  font-family: "Tilt Warp", serif;
+  font-size: 45px;
+  font-weight: 400;
+  position: relative;
+  padding-left: 13rem;
+  top:200px;
+}
+.please-login {
+  color: #000000;
+  text-align: left;
+  /* font-family: "TiltWarp-Regular", sans-serif; */
+  font-family: "Tilt Warp", serif;
+  font-size: 80px;
+  font-weight: 400;
+  position: relative;
+  left:34%;
+  top: 75px;
+}
+.btn btn-primary button-login {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Tilt Warp", serif;
+  font-size: 45px;
+  font-weight: 400;
+  position: relative;
+  height: 60px;
+  padding: 1rem;
+}
+.email-box {
+  background: #ffffff;
+  width: 50%;
+  height: 100px;
+  position: relative;
+  left: 50%;
+  margin-top: 9%;
+  margin-left:-10%;
+  border-radius: 10px;
+  text-align: left;
+  padding: 1rem;
+  box-shadow: 0 0 2px 5px rgba(0, 0, 0, 0.3);
+  font-family: "Tilt Warp", serif;
+
+}
+
+.tac-one-regular {
+  font-family: "Tac One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.tilt-warp {
+  font-family: "Tilt Warp", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  
+}
